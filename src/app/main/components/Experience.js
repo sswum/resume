@@ -41,14 +41,15 @@ const Experience = () => {
         <Item title="WORK EXPERIENCE"> {/*경력 */}</Item>
         <Item title="CERTIFICATE">{/*자격증*/}</Item>
         <Item title="SKILL">
-        <Image
+        
+          {/*리액트 ,스트링부트*/}</Item>
+      </Wrapper>
+      <Image
         src="/images/skill.png"
         width={250}
         height={250}
         alt="스킬 이미지"
       />
-          {/*리액트 ,스트링부트*/}</Item>
-      </Wrapper>
     </Section>
   );
 };
