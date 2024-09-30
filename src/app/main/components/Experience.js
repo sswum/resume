@@ -2,6 +2,7 @@ import React from 'react';
 import { Section } from 'react-fullpage';
 import styled from 'styled-components';
 import Item from './Item';
+import Image from 'next/image';
 
 const Wrapper = styled.div`
   &.first {
@@ -39,7 +40,14 @@ const Experience = () => {
         <Item title="EDUCATION">{/*학교정보 */}</Item>
         <Item title="WORK EXPERIENCE"> {/*경력 */}</Item>
         <Item title="CERTIFICATE">{/*자격증*/}</Item>
-        <Item title="SKILL">{/*리액트 ,스트링부트*/}</Item>
+        <Item title="SKILL">
+        <Image
+        src="/images/skill.png"
+        width={250}
+        height={250}
+        alt="스킬 이미지"
+      />
+          {/*리액트 ,스트링부트*/}</Item>
       </Wrapper>
     </Section>
   );
